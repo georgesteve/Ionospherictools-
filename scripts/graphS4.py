@@ -1,5 +1,4 @@
 import os
-import datetime
 
 import IPython
 import IPython.display
@@ -11,7 +10,7 @@ import seaborn as sns
 import tensorflow as tf
 
 
-from datetime import datetime, timedelta
+from datetime import date, timedelta
 import calendar
 
 
