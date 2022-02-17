@@ -20,10 +20,10 @@ class S4:
     """
     Define un rectángulo según su base y su altura.
     """
-    def __init__(self):
-        date = date.today() 
-        self.d1  = date - timedelta(days = int(date.strftime("%d"))-1)
-        self.d2 = date.replace(day = calendar.monthrange(date.year, date.month)[1])
+    def __init__(self,today = date.today() ):
+        
+        self.d1  = today - timedelta(days = int(today.strftime("%d"))-1)
+        self.d2  = today.replace(day = calendar.monthrange(today.year, today.month)[1])
 
     def muestra(self):
         return self.d1 , self.d2
