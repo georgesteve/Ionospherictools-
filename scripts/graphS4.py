@@ -4,7 +4,6 @@ import os
 import IPython
 import IPython.display
 import matplotlib as mpl
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -17,7 +16,7 @@ import calendar
 
 
 
-class S4:
+class Dayfilter:
     """
     Define un rectángulo según su base y su altura.
     """
