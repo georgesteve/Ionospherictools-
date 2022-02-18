@@ -31,5 +31,8 @@ class Dayfilter:
     def filtrar(self,dataframe):
         return dataframe[(dataframe.index > self.d1) & (dataframe.index < self.d2)]
     
+    
+    
+   
 limite = Dayfilter()
 print("Fechas: ", limite.muestra())
