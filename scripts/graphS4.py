@@ -10,7 +10,7 @@ import seaborn as sns
 import tensorflow as tf
 
 
-from datetime import date, timedelta
+from datetime import date, timedelta,datetime
 import calendar
 
 
@@ -27,6 +27,9 @@ class S4:
 
     def muestra(self):
         return self.d1 , self.d2
-
+    
+    def filtrar(self,dataframe):
+        return dataframe[(dataframe.index > self.d1) & (dataframe.index < self.d2)]
+    
 limite = S4()
-print("Área del rectángulo: ", limite.muestra())
+print("Fechas: ", limite.muestra())
