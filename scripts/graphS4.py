@@ -1,3 +1,4 @@
+#Obtain first day and last day of specific months, by default it is the current day.
 import os
 
 import IPython
