@@ -21,7 +21,7 @@ class S4plots:
         self.S4  = dataframeS4
         self.SW  = dataframeSW
 
-    def plotS4f107(self,title):
+    def plotS4Other(self,title,Name):
 
       fig, ax1 = plt.subplots(figsize=(20,6))
 
@@ -70,7 +70,7 @@ class S4plots:
 
       ax2.set_xlabel('Hora Local', fontsize=20)
       #ax1.set_ylabel('Kpx10', color=color,fontsize=20)
-      ax2.set_ylabel('Dst',fontsize=20)
+      ax2.set_ylabel(Name,fontsize=20)
 
       #ax.hist2d(Y1, X1, (80, 20), cmap=plt.cm.jet)
       lns2=ax2.plot(Y2,X2,color='r', label='Dst')
@@ -93,9 +93,7 @@ class S4plots:
       plt.legend()
       plt.show()
     
-    def plotS4SF(self,dataframe):
-        return dataframe[(dataframe.index > self.d1) & (dataframe.index < self.d2)]
-    
+
     
     
    
