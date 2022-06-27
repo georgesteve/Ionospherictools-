@@ -14,7 +14,7 @@ import matplotlib.dates as mdates
 
 class S4plots:
     """
-    Define un rectángulo según su base y su altura.
+    Graficos en funcion a dataframes de S4 con datetime-index 
     """
     def __init__(self,dataframeS4,dataframeSW):
         
@@ -97,5 +97,5 @@ class S4plots:
     
     
    
-limite = Dayfilter()
-print("Fechas: ", limite.muestra())
+#limite = Dayfilter()
+#print("Fechas: ", limite.muestra())
