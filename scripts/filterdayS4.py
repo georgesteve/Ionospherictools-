@@ -17,9 +17,7 @@ import calendar
 
 
 class Dayfilter:
-    """
-    Define un rectángulo según su base y su altura.
-    """
+
     def __init__(self,today = date.today() ):
         
         self.d1  = today - timedelta(days = int(today.strftime("%d"))-1)
@@ -34,5 +32,5 @@ class Dayfilter:
     
     
    
-limite = Dayfilter()
-print("Fechas: ", limite.muestra())
+#limite = Dayfilter()
+#print("Fechas: ", limite.muestra())
