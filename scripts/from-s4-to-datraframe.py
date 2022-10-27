@@ -3,6 +3,7 @@
 # Tiempo: time of the day in seconds (s)
 # Elv, Az: sexagesimal degrees (°)
 # Author: George Fajardo
+#Python3
 # 
 
 import os
