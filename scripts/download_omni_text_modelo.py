@@ -1,5 +1,6 @@
 #This algorithm it's an adaptation to  Liam M. Kilcommons code https://github.com/lkilcommons/nasaomnireader/blob/master/nasaomnireader/omnireader.py
 #It asks for the date and return the variables needed to make a prediction with the machine learning model developed.
+#DEveloped in python3
 
 def download_omni_text_modelo(input_datetime):
     #Create a time window
